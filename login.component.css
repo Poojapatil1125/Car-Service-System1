@@ -1,0 +1,28 @@
+.txt{
+    font-family:cursive;
+    color: red;
+    font-size: xx-large;
+}
+.width{
+    width:100%;
+}
+.margin{
+    margin-top:80px;
+}
+.wrapper{
+    background: #cc3d00 radial-gradient(circle at 60% 100%,#ffa436 5%,#cc3d00 94%);
+    /*background-color: #ff4f5a;*/
+    
+}
+.icon-display {
+    transform: scale(2);
+ }
+ .mt{
+     margin-top:50px;
+ }
+
+ 
+
+
+
+ 

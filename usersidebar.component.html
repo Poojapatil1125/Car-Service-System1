@@ -1,0 +1,95 @@
+
+<mat-card>
+    <mat-action-list>
+        <div class="list">
+            <ul>
+                <li><mat-icon mat-list-icon>people</mat-icon></li>
+                <li>Admin</li>
+                <li><mat-icon mat-list-icon>fiber_manual_record</mat-icon></li>
+                <li>Online</li>
+            </ul>
+        </div>
+        <button mat-list-item  routerLink="/registration/dashboard">
+            <mat-icon mat-list-icon>dashboard</mat-icon>Dashboard</button>
+        <!-- <button mat-list-item  routerLink="/registration/mechanics">
+                <mat-icon mat-list-icon>view_list</mat-icon>Mechanics</button>
+                <select name = "mechanics"> 
+                    <button mat-list-item  routerLink="/registration/add-mechanics"></button>
+                        <option value = "add " selected>Add Mechanics</option>
+                        <button mat-list-item  routerLink="/registration/manage-mechanics"></button>
+                        <option value = "manage">Manage Mechanics</option>
+                        </select>
+              
+            
+                        <button mat-list-item  routerLink="/registration/mechanics">
+                            <mat-icon mat-list-icon>view_list</mat-icon>Mechanics</button> -->
+                            <mat-expansion-panel >
+         <mat-expansion-panel-header>
+           <mat-panel-title>
+            <mat-icon mat-list-icon>view_list</mat-icon>Mechanics
+           </mat-panel-title>
+           
+         </mat-expansion-panel-header>
+         <button mat-list-item  routerLink="/registration/addmechanics">Add Mechanics</button>             
+                        <button mat-list-item  routerLink="/registration/managemechanics">Manage Mechanics</button>            
+       </mat-expansion-panel>
+       <mat-expansion-panel >
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+           <mat-icon mat-list-icon>insert_drive_file</mat-icon>Vehicle Category
+          </mat-panel-title>
+          
+        </mat-expansion-panel-header>
+        <button mat-list-item  routerLink="/registration/addcategory">Add Category</button>
+                       
+                       <button mat-list-item  routerLink="/registration/managecategory">Manage Category</button>
+                       
+      </mat-expansion-panel>
+            <button mat-list-item  routerLink="/registration/register-user">
+                <mat-icon mat-list-icon>person</mat-icon>Register User</button>
+                <mat-expansion-panel >
+                    <mat-expansion-panel-header>
+                      <mat-panel-title>
+                       <mat-icon mat-list-icon>park</mat-icon>Service Request
+                      </mat-panel-title>
+                      
+                    </mat-expansion-panel-header>
+                    <button mat-list-item  routerLink="/registration/newservice">New Service</button>
+                    <button mat-list-item  routerLink="/registration/rejectedservice">Rejected Service</button>
+                                   
+                  </mat-expansion-panel>
+                  <mat-expansion-panel >
+                    <mat-expansion-panel-header>
+                      <mat-panel-title>
+                       <mat-icon mat-list-icon>cleaning_services</mat-icon>Servicing
+                      </mat-panel-title>
+                      
+                    </mat-expansion-panel-header>
+                    <button mat-list-item  routerLink="/registration/pending">Pending</button>
+                    <button mat-list-item  routerLink="/registration/completed">Completed</button>
+                    <button mat-list-item  routerLink="/registration/allservice">All Service</button> -->
+                                   
+                  </mat-expansion-panel>
+                  <mat-expansion-panel >
+                    <mat-expansion-panel-header>
+                      <mat-panel-title>
+                       <mat-icon mat-list-icon>track_changes</mat-icon>Customer Enquiry
+                      </mat-panel-title>
+                      
+                    </mat-expansion-panel-header>
+                    <button mat-list-item  routerLink="/registration/not-response-enquiry">Not Response Enquiry</button>
+                    <button mat-list-item  routerLink="/registration/response-enquiry">Response Enquiry</button>
+                    <button mat-list-item  routerLink="/registration/all-response-enquiry">All Response Enquiry</button>
+                                   
+                  </mat-expansion-panel>
+            <button mat-list-item  routerLink="/registration/change-password">
+                <mat-icon mat-list-icon>lock_reset</mat-icon>Change Password</button>
+            <button mat-list-item  routerLink="/registration/logout">
+                <mat-icon mat-list-icon (click)="logout()" >logout</mat-icon>Logout</button>
+
+  
+    </mat-action-list>
+</mat-card>
+
+
+

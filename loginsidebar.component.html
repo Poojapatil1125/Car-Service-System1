@@ -1,0 +1,40 @@
+<mat-card>
+    <mat-action-list>
+        <div class="list">
+            <ul>
+                <li><mat-icon mat-list-icon>people</mat-icon></li>
+                <li>Admin</li>
+                <li><mat-icon mat-list-icon>fiber_manual_record</mat-icon></li>
+                <li>Online</li>
+            </ul>
+        </div>
+        <button mat-list-item  routerLink="/loginuser/loginclick">
+            <mat-icon mat-list-icon>dashboard</mat-icon>Dashboard</button>
+            <mat-expansion-panel >
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                   <mat-icon mat-list-icon>view_list</mat-icon>Enquiry
+                  </mat-panel-title>
+                  
+                </mat-expansion-panel-header>
+                <button mat-list-item  routerLink="/loginuser/enquiryform">Enquiry Form</button>             
+                        <button mat-list-item  routerLink="/loginuser/enquiryhistory">Enquiry History</button>            
+       </mat-expansion-panel>
+       <mat-expansion-panel >
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+                <mat-icon mat-list-icon>park</mat-icon>Service Request
+          </mat-panel-title>
+          
+        </mat-expansion-panel-header>
+        <button mat-list-item  routerLink="/loginuser/enquiryform">Request Form</button>             
+                <button mat-list-item  routerLink="/loginuser/enquiryhistory">Request History</button>            
+</mat-expansion-panel>
+<button mat-list-item  routerLink="/loginuser/changepassword">
+    <mat-icon mat-list-icon>lock_reset</mat-icon>Change Password</button>
+<button mat-list-item  routerLink="/loginuser/logout">
+    <mat-icon mat-list-icon (click)="logout()" >logout</mat-icon>Logout</button>
+</mat-action-list>
+</mat-card>         
+
+       
